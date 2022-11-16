@@ -9,7 +9,7 @@ const Banner = () => {
 
       <div className='app__banner  section__padding' id='home' >
         <div className="app__banner-img">
-          <img src={images.welcome} alt="header_img" />
+          <img src={images.pexels} alt="header_img" />
         </div>
         
         <div className="app__banner-info">
