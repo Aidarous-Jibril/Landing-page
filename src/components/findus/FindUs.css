@@ -1,0 +1,31 @@
+.app__findUs-container {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+}
+
+.box {
+  flex: 1;
+  margin: 20px 10px;
+  padding: 50px 20px;
+}
+.findUs__img img {
+    width: 80%;
+}
+
+  
+
+@media (max-width: 968px) {
+  .app__findUs-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .findUs__img img {
+    max-width: 70%;
+    margin-top: 2rem;
+}
+
+}

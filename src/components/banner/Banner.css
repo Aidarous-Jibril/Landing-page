@@ -1,0 +1,101 @@
+.header {
+    max-width: 100%;
+    margin: 0px auto;
+    border-bottom: 1px solid #bbc7c7;
+    background-color: var(--color-black);
+    padding: 40px;
+  }
+
+.app__banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 100vh;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+
+  .app__banner-img img {
+    width: 100%;
+
+}
+  .app__banner-info h1 {
+      font-family: var(--font-base);
+      color: var(--color-golden);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      line-height: 117px;
+      font-size: 80px;
+    }
+.app__banner-info p {
+    margin: 2rem 0; color: white;  letter-spacing: 0.04em;
+    }
+
+  .custom__button {
+    background-color: var(--color-golden);
+    color: var(--color-black);
+    padding: 14px 40px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.custom__button:hover {
+    background-color: var(--color-gray);
+    color: #fff;
+  }
+
+  /* Media Query */
+  @media screen and (min-width: 2000px) {
+    .app__banner h1 {
+        font-size: 180px;
+        line-height: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 80px;
+        max-width: 90vh;
+        min-height: 100vh;
+        max-width: 1200px;
+        margin: 0px auto;
+      }
+    
+    .app__banner h1 {
+        font-size: 70px;
+    }
+    .app__banner-img img {
+    width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__banner-info h1 {
+        font-size: 48px;
+        line-height: 77px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+    .app__banner-img img {
+        width: 100%;
+    }
+    .app__banner-info {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 40px;
+        align-items: center;
+        border-bottom: 1px solid #bbc7c7;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__wrapper-info h1 {
+        font-size: 40px;
+        line-height: 70px;
+    }
+}

@@ -1,0 +1,112 @@
+.app__awards {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .awards__heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .awards__row {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .row__card {
+    width: 42%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .row__card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff41ff, #ff4b2b);
+    color: #fff;
+  }
+  .row__card-header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .row__card-body {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .row__card-body h1 {
+        margin-bottom: 2rem ;
+        font-size: 42px !important; 
+        color: var(--color-black);
+        font-family: var(--font-base);
+        line-height: 63.2px;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+    }
+    .row__card-body p{
+        font-size: 18px; 
+    }
+  
+  .row__card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff41ff, #ff4b2b);
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 5px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .row__card-body .btn:hover {
+    background: linear-gradient(to right, #b242b2, #ff4b2b);
+    transform: scale(1.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Responsive media queries */
+  @media screen and (min-width: 1400px) {
+    .app_awards {
+      width: 100%;
+    }
+  
+    .row__card {
+      width: 22%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1240px) {
+    .row__card {
+      width: 40%;
+    }
+    .row__card-body h1 {
+        font-size: 32px !important;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .app_awards {
+      width: 100%;
+    }
+
+    .awards__heading {
+      padding: 20px;
+      font-size: 30px;
+    }
+  
+    .row__card {
+      width: 80%;
+    }
+  }
+  

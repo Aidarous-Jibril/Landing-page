@@ -1,0 +1,109 @@
+.app__footer {
+    width: 100%;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--color-black);
+    z-index: 1;
+
+}
+
+
+/* Footer Links style */
+.footer__links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 0 2rem;
+    
+}
+
+.footer__links-contact,
+.footer__links-logo,
+.footer__links-work {
+    flex: 1;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links-icons {
+    margin-top: 1rem;
+}
+.footer__links-icons svg {
+    color: #fff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.footer__links-icons svg:hover {
+    color: var(--color-golden);
+}
+
+.footer__links-logo img:first-child  {
+    width: 275px;
+    margin-bottom: 1rem;
+}
+
+.footer__links-contact-header, 
+.footer__links-work-header {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    text-transform: capitalize;
+    font-size: 38px;
+    letter-spacing: .04em;
+    line-height: 41px;
+    margin-bottom: 2rem;
+}
+
+.footer__copyright {
+    margin-top: 4.5rem;
+    color: var(--color-golden);
+}
+.footer__copyright p{
+    color: var(--color-golden);
+    font-size: 1.2rem;
+}
+
+
+/* Media Query Responsiveness */
+@media screen and(min-width: 2000) {
+    .footer__links-contact-header, 
+    .footer__links-work-header {
+        font-size: 48px;
+        letter-spacing: .06em;
+        line-height: 61px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .footer__links {
+        flex-direction: column;
+    }
+
+    .app__footer-links_contact,
+    .app__footer-links_logo,
+    .app__footer-links_work {
+        margin: 2rem 0;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 450px) { 
+    .footer__links-logo img:first-child  {
+        width: 175px;
+        margin-bottom: 1rem;
+    }
+    .footer__links-contact-header, 
+    .footer__links-work-header {
+        font-size: 32px;
+        letter-spacing: .02em;
+        line-height: 31px;
+        margin: 1rem 0;
+    }
+}
